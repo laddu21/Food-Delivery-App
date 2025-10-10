@@ -1,0 +1,4 @@
+Tests added: internal/repository/user_repo_test.go
+go.mod updated to include github.com/ory/dockertest/v3
+
+Run `go test ./internal/repository -v` locally or let CI execute the tests.
