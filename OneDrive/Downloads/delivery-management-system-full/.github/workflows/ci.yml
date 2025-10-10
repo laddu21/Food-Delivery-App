@@ -47,6 +47,12 @@ jobs:
           go mod download
           CGO_ENABLED=0 go build -o dms ./cmd
 
+      - name: Build frontend
+        working-directory: frontend
+        run: |
+          npm ci
+          npm run build
+
       - name: Wait for Postgres
         run: |
           for i in {1..30}; do
