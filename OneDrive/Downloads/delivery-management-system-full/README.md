@@ -3,6 +3,15 @@
 # Quick start (Docker)
 Ensure Docker is installed.
 
+## Setup
+
+1. Copy the example environment file:
+```bash
+cp backend/.env.example backend/.env
+```
+
+2. Update the `.env` file with your actual configuration values (passwords, secrets, etc.)
+
 From project root:
 ```bash
 docker-compose up --build
