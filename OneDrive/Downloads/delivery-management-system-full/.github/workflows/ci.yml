@@ -1,6 +1,7 @@
 name: CI
 
 on:
+  workflow_dispatch:
   push:
     branches: [ master, main, fix/cleanup-node-modules ]
   pull_request:
