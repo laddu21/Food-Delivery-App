@@ -72,9 +72,12 @@ const AIBot = ({ setShowAIBot, isLoggedIn, setShowLogin }) => {
         setSelectedQuote('')
 
         try {
+            console.log('Calling AI search API with query:', userInput);
             const response = await axios.post(`${url}/api/food/ai-search`, { query: userInput })
+            console.log('AI search response:', response.data);
             if (response.data.success) {
                 const aiFoods = response.data.data
+                console.log('AI foods received:', aiFoods);
                 setSuggestedItems(aiFoods)
 
                 // Select a random quote
