@@ -5,7 +5,7 @@ import upload_area from './upload_area.png'
 import parcel_icon from './parcel_icon.png'
 import professional_half_pic from './professional_half-pic.jpg'
 
-export const url = 'http://localhost:4004'
+export const url = import.meta.env.VITE_API_URL || 'http://localhost:4004'
 export const currency = '₹'
 
 export const assets = {
