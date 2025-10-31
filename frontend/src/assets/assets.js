@@ -55,7 +55,7 @@ import twitter_icon from './twitter_icon.png'
 import cross_icon from './cross_icon.png'
 import selector_icon from './selector_icon.png'
 
-export const url = 'http://localhost:4004'
+export const url = import.meta.env.VITE_API_URL || 'http://localhost:4004'
 export const currency = '₹'
 
 export const assets = {
